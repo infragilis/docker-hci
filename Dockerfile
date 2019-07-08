@@ -17,10 +17,10 @@ RUN yum -y install python36-setuptools \
   && pip install solidfire-sdk-python \
   && pip install xlsxwriter \
   && git clone http://www.github.com/infragilis/hci \
-  && touch /usr/local/lib/python3.6/site-packages/ansible/module_utils/pstools/__init__.py \
-  && cp /usr/local/lib/python3.6/site-packages/ansible/modules/pstools/testping.yml /hci/ \
-  && awk '{ sub("\r$", ""); print }' testping.yml > hcipingtest.yml \
-  && mv ansible /tmp \
-  && rm -f testping.yml
+#  && touch /usr/local/lib/python3.6/site-packages/ansible/module_utils/pstools/__init__.py \
+#  && cp /usr/local/lib/python3.6/site-packages/ansible/modules/pstools/testping.yml /hci/ \
+#  && awk '{ sub("\r$", ""); print }' testping.yml > hcipingtest.yml \
+#  && mv ansible /tmp \
+#  && rm -f testping.yml
 
 EXPOSE 2020/udp
