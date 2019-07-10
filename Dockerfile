@@ -1,7 +1,7 @@
 #Ansible env for HCI deploy
-#Version 1.a
+#Version 1.b
 FROM centos:7
-MAINTAINER SeB version: 1.a
+MAINTAINER SeB version: 1.b
 RUN yum install -y epel-release && \
 yum install -y python python-pip git && \
 pip install --upgrade pip && \
