@@ -26,6 +26,7 @@ cp /usr/local/lib/python3.6/site-packages/ansible/modules/pstools/testping.yml /
 awk '{ sub("\r$", ""); print }' /hci/testping.yml > /hci/hcipingtest.yml && \
 mv /hci/ansible /tmp && \
 rm -f /hci/testping.yml
+WORKDIR /hci
 
 
-EXPOSE 2020/udp
+EXPOSE 2010/udp
