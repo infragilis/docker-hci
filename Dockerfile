@@ -15,8 +15,8 @@ rm -rf ansible/ && yum clean all && \
 yum -y install python36-setuptools && \
 easy_install-3.6 pip && \
 pip3 install ansible && \
-pip3 install xlsxwriter \
-pip3 install requests \
+pip3 install xlsxwriter && \
+pip3 install requests && \
 git clone https://github.com/infragilis/hci
 
 EXPOSE 2020/udp
