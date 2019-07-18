@@ -18,7 +18,8 @@ pip3 install ansible && \
 pip3 install xlsxwriter && \
 pip3 install requests && \
 git clone https://github.com/infragilis/hci && \
-cp -r /hci/ansible/lib/ansible/module_utils/pstools /usr/local/lib/python3.6/site-packages/ansible/module_utils/ &&\
+sleep 15 && \
+cp -r /hci/ansible/lib/ansible/module_utils/pstools /usr/local/lib/python3.6/site-packages/ansible/module_utils/ && \
 cp -r /hci/ansible/lib/ansible/modules/pstools/ /usr/local/lib/python3.6/site-packages/ansible/modules/ && \
 touch /usr/local/lib/python3.6/site-packages/ansible/module_utils/pstools/__init__.py && \
 cp /usr/local/lib/python3.6/site-packages/ansible/modules/pstools/testping.yml /hci/ && \
