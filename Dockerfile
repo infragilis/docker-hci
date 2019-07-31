@@ -1,7 +1,7 @@
 #Ansible env for HCI deploy
-#Version 2.0
+#Version 2.1
 FROM centos:7
-MAINTAINER SeB version: 2.0
+MAINTAINER SeB version: 2.1, switched both api and beacons to 10G network
 RUN yum install -y epel-release && \
 yum install -y python python-pip git && \
 pip install --upgrade pip && \
